@@ -1,183 +1,192 @@
 html {
-    background: #000;
-    color: #fff;
-    font-family: Georgia, "Times New Roman", Times, serif;
+  background: #000;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .row {
-    display: flex;
-    gap: 3.2rem;
+  display: flex;
+  gap: 3.2rem;
 }
 
 .col-2 {
-    width: 40%;
+  width: 40%;
 }
 
 section {
-    max-width: 80rem;
-    margin: 3.2rem auto;
-    padding: 3.3rem;
-    border: 1px solid #fff;
+  max-width: 80rem;
+  margin: 3.2rem auto;
+  padding: 3.3rem;
+  border: 1px solid #fff;
 }
 
 h1 {
-    font-size: 6.4rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 0 1.6rem;
+  font-size: 6.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 1.6rem;
 }
 
 hr {
-    height: 2px;
-    background: #fff;
-    border: 1px inset #fff;
-    margin-bottom: 3.2rem;
+  height: 2px;
+  background: #fff;
+  border: 1px inset #fff;
+  margin-bottom: 3.2rem;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 form h2 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    margin-top: 1.6rem;
-    margin-bottom: 1rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
 }
 
-form :where(input[type="text"],
+form
+  :where(
+    input[type="text"],
     input[type="tel"],
     input[type="email"],
-    input[type="number"]) {
-    font: 2.4rem Arial;
-    padding: 0.6rem 0;
-    border: none;
-    border-radius: 0.7rem;
-    width: 100%;
-    margin-bottom: 0.6rem;
-    color: #999;
-    text-indent: 1rem;
+    input[type="number"]
+  ) {
+  font: 2.4rem Arial;
+  padding: 0.6rem 0;
+  border: none;
+  border-radius: 0.7rem;
+  width: 100%;
+  margin-bottom: 0.6rem;
+  color: #999;
+  text-indent: 1rem;
 }
 
-form :where(input[type="text"],
+form
+  :where(
+    input[type="text"],
     input[type="tel"],
     input[type="email"],
-    input[type="number"]):focus {
-    border: #86b7fe;
-    color: #212529;
-    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    input[type="number"]
+  ):focus {
+  border: #86b7fe;
+  color: #212529;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
 
-form :where(input[type="text"],
+form
+  :where(
+    input[type="text"],
     input[type="tel"],
     input[type="email"],
-    input[type="number"]):focus-visible {
-    outline: none;
+    input[type="number"]
+  ):focus-visible {
+  outline: none;
 }
 
 form input[type="number"] {
-    width: 40%;
+  width: 40%;
 }
 
 form p {
-    font-size: 1.12rem;
-    margin-bottom: 1.6rem;
+  font-size: 1.12rem;
+  margin-bottom: 1.6rem;
 }
 
 form select {
-    font: 2.4rem Arial;
-    padding: 0.6rem;
-    border-radius: 7px;
-    margin-bottom: 0.6rem;
-    color: #999;
-    width: 100%;
+  font: 2.4rem Arial;
+  padding: 0.6rem;
+  border-radius: 7px;
+  margin-bottom: 0.6rem;
+  color: #999;
+  width: 100%;
 }
 
 form select:focus-visible {
-    outline: none;
+  outline: none;
 }
 
 form label {
-    font-size: 1.6rem;
-    margin-right: 2rem;
+  font-size: 1.6rem;
+  margin-right: 2rem;
 }
 
 .ratings {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .ratings h2 {
-    margin-bottom: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
 .ratings p {
-    display: inline-block;
-    font-size: 1.328rem;
-    font-weight: 700;
-    margin-right: 3.2rem;
+  display: inline-block;
+  font-size: 1.328rem;
+  font-weight: 700;
+  margin-right: 3.2rem;
 }
 
-.ratings>div {
-    margin-top: 1.6rem;
+.ratings > div {
+  margin-top: 1.6rem;
 }
 
 button {
-    font: 3.2rem Arial;
-    background: #023DE3;
-    width: 12.8rem;
-    border: 1px solid #fff;
-    padding: 8px 13px;
-    border-radius: 10px;
-    margin: auto;
-    color: #fff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-top: 0.8rem;
+  font: 3.2rem Arial;
+  background: #023de3;
+  width: 12.8rem;
+  border: 1px solid #fff;
+  padding: 8px 13px;
+  border-radius: 10px;
+  margin: auto;
+  color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 0.8rem;
 }
 
 @media only screen and (max-width: 426px) {
-    .row {
-        display: block;
-    }
+  .row {
+    display: block;
+  }
 
-    .col-2 {
-        width: 90%;
-    }
+  .col-2 {
+    width: 90%;
+  }
 
-    form input[type="number"] {
-        width: 90%;
-    }
+  form input[type="number"] {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 376px) {
-    .col-2 {
-        width: 95%;
-    }
+  .col-2 {
+    width: 95%;
+  }
 
-    form input[type="number"] {
-        width: 95%;
-    }
+  form input[type="number"] {
+    width: 95%;
+  }
 
-    .ratings p {
-        display: block;
-    }
+  .ratings p {
+    display: block;
+  }
 
-    button {
-        margin-top: 3rem;
-    }
+  button {
+    margin-top: 3rem;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-    .col-2 {
-        width: 100%;
-    }
+  .col-2 {
+    width: 100%;
+  }
 
-    form input[type="number"] {
-        width: 100%;
-    }
-    option {
-        overflow: scroll;
-        max-width: 10px;
-    }
+  form input[type="number"] {
+    width: 100%;
+  }
+  option {
+    overflow: scroll;
+    max-width: 10px;
+  }
 }
